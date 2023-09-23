@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css伪类选择器</title>
+    <style>
+        /* div p:first-child{
+            color: red;
+        }
+        body :last-child{
+            color: blue;
+        } */
+
+        /* p:nth-child(odd){
+            color: red;
+        }
+        p:after{
+            content: "-p标签：";
+            color: blue;
+        }
+        p:before{
+            content: "-p标签：";
+            color: blue;
+        } */
+
+        
+
+        a:link{
+            color: pink;
+        }
+        /* p:link{
+            color: pink;
+        } */
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        a:active{
+            color:chartreuse
+        }
+
+        p:hover{
+            background-color: coral;
+        }
+
+        p:active{
+            background: red;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <a target="_black" href="https://www.baidu.com">百度</a>
+
+    <hr>
+    <p>我是body元素下的第一个p标签</p>
+    <div>
+        <p>我是div元素下的第一个p标签</p>
+        <p>我是div元素下的第二个p标签</p>
+        <div>div</div>
+    </div>
+  
+    <p>我是body元素下的第二个p标签</p>
+
+    <div>
+        我是div
+        <span>我是span</span>
+    </div>
+   
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css子集后代选择器</title>
+    <style>
+       /* div>p{
+           color: red;
+       } */
+       /* div>span{
+           color: red;
+       } */
+       div span{
+           color: red;
+       }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p> <span>我是一个span标签</span></p>
+        <p>我是一个在div里的p标签</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <span>我是一个span标签</span>
+       
+        <p>我是一个在div里的p标签</p>
+    </div>
+    
+</body>
+</html>
