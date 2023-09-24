@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        div{
+            height: 500px;
+            width: 300px;
+            background-color: pink;
+            display: flex;
+            align-items: flex-start;
+        }
+        div>*{
+            flex-basis: 20px;
+            /* width: 60px; */
+            background-color: aquamarine;
+        }
+        div span{
+            /* auto|stretch|center|flex-start|flex-end|baseline; */
+            align-self: baseline;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <p >12345678910</p>
+        <p >2</p>
+        <span >3</span>
+        <span >4</span>
+    </div>
+</body>
+</html>
