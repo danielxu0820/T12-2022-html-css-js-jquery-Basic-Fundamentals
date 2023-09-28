@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    
+    <!-- 行内式 -->
+    <div onClick="alert('嗨~~点到我了~！')">点我试试</div>
+    <!-- 内嵌式 -->
+    <script>alert("页面一加载，就会出现这个弹窗")</script>
+    <!-- 外部式，引用外部js文件 -->
+    <script src="index.js"></script>
+
+</body>
+<script>
+    //我是一段注释
+    /**
+     * 注释1
+     * 注释2
+     * 注释3
+     * **/
+    // alert("页面一加载，就会出现这个弹窗")
+
+    // var num = 10
+    // console.log(num)
+
+    // var age;
+    // console.log(age)
+
+    // name = "Tina"
+    // console.log(name)
+
+    // console.log(type)
+    var numberStr = 1;
+
+    // var num = ( 
+
+    // var num = 10;
+    //     // num++
+    //     // ++num
+    // //变量后面递增 那么就是先赋值后计算 
+    // // var num2 = num++
+    // //变量前面递增，那么就是先计算后赋值
+    // var num2 = ++num
+    // // num = num - 1
+    // // num = num - 1
+    // // num = num - 1
+
+    // console.log(num)
+    // console.log(num2)
+
+    //     var num = 1;
+
+    //   var num2 = num++ + num++;// 1 + 2 
+    // //   var num2 = num + 2++
+    //   console.log(num); // 3
+
+    /**
+     * = 赋值
+     * == 只判断值，不判断类型
+     * ===值和类型都判断 
+     * 
+     * */
+    // console.log(1>1)
+    // console.log(1<2)
+    // console.log(1<=2)
+    // console.log(1>=2)
+    // console.log(1=='1')
+    // console.log(1==='1')
+    // console.log(1!=='2')
+
+
+    var number1 = 1;
+    var number2 = "1"
+
+    // 逻辑&&  表达式2侧的结果都要为真
+    // console.log(number1==number2&&1==2-1)
+    // console.log(number1==number2&&1==1-1)
+
+
+    // 逻辑|| 只要左侧的结果为真，则直接返回左侧结果，忽略右侧
+    // console.log(number1==number2||1==1-1)
+    // 逻辑|| 只要左侧的结果为真=假，则计算右侧结果
+    // console.log(1==1-1||number1==number2)
+    // console.log(1==1-1||number1+1==number2)
+
+    // 逻辑 !
+
+    // console.log(!(number1!=number2))
+
+
+    //+=计算赋值，先计算再赋值
+    // number1 += 1
+    // number1 -= 1
+    number1 = 10
+
+    number1 %= 3
+
+    // console.log(number1);
+    // console.info(number1);
+    // console.error("假装有一个报错")
+    // console.warn("这是一个警告")
+    // console.time('计时器');  
+    // console.timeEnd('计时器');
+
+    // console.clear()
+
+    var name = "tina"
+    var age = 18
+    age++
+    console.log("%s今年%d岁", name, age)
+</script>
+
+</html>
