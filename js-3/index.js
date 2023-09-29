@@ -47,12 +47,12 @@
 
 
 // 拿到数组里大于10的数据
-var arr = [10, 12, 9, 23, 8, 7, 19, 30, 46]
-for (var i = 0; i < arr.length; i++) {
-    if(arr[i]>10){
-        console.log(arr[i]);
-    }
-}
+// var arr = [10, 12, 9, 23, 8, 7, 19, 30, 46]
+// for (var i = 0; i < arr.length; i++) {
+//     if(arr[i]>10){
+//         console.log(arr[i]);
+//     }
+// }
 
 
 // // var arr = [12,27,39]
