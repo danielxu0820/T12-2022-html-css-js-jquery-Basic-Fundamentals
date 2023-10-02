@@ -1,0 +1,111 @@
+<!--
+ * @Author: Tina
+ * @Date: 2022-02-10 15:56:13
+ * @LastEditors: Tina
+ * @LastEditTime: 2022-02-11 11:03:11
+ * @FilePath: \code\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <!-- <script src="./jQuery.js"></script> -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <style>
+        .animate-box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        我是一个div
+    </div>
+    <div href="#" class="box" id="div2"> 
+        我是第二个div
+    </div>
+    <div class="animate-box"></div>
+    <button class="show-btn">显示</button>
+    <button class="hide-btn">隐藏</button>
+    <button class="change-btn">显示隐藏</button>
+    <button class="animate-btn">移动</button>
+
+    <a href="www.baidu.com">百度</a>
+<script>
+    // var divEl = document.getElementsByTagName("div")
+    // console.log(divEl);
+    // console.log($);
+    // console.log($('div.box'));
+    // console.log($('.box'));
+    // console.log($('#div1'));
+    // console.log($('.box#div2'));
+
+    // console.log($("[href$='.jpg']"));
+    //事件绑定
+    $('#div1').click(function(e){
+        console.log("点击了div");
+        console.log(e);
+    })
+    //事件调用
+    // $('#div1').click()
+    $('.show-btn').click(function(){
+        $('.box').show(2000,function(){
+            alert("彻底显示了")
+        })
+    })
+    $('.hide-btn').click(function(){
+        // $('.box').hide(3000,function(){
+        //     alert("彻底隐藏了")
+        //     // $('.box').show(2000,function(){
+        //     //     alert("彻底显示了")
+        //     // })
+        // })
+        $(".animate-box").stop();
+    })
+
+    $('.change-btn').click(function(){
+        // $('.box').toggle(2000)
+        // $('.box').fadeOut(3000,function(){
+        //     $('.box').fadeIn(3000)
+        // })
+        // $('.box').fadeToggle(2000)
+        // $('.box').fadeTo(1000,0.8)
+        // $('.box').fadeTo(1000,0.5)
+        // $('.box').fadeTo(1000,0.3)
+
+        // $('.box').slideUp(1000)
+        // $('.box').slideDown(1000)
+        // $('.box').hide(1000)
+        // $('.box').show(1000)
+        $('.box').slideToggle(1000)
+
+        
+
+    })
+
+    $('.animate-btn').click(function(){
+        // $('.animate-box').animate({
+        //     left:'300px'
+        // },3000,function(){
+        //     $('.animate-box').animate({
+        //          left:'0'
+        //     },3000) 
+        // })
+        $('.animate-box').animate({
+            left:'300px',
+            width:'+=100px'
+        },3000) 
+    })
+
+    
+
+</script>
+</body>
+</html>
