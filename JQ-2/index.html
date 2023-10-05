@@ -1,0 +1,135 @@
+<!--
+ * @Author: Tina
+ * @Date: 2022-02-10 15:56:13
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-02-17 15:16:01
+ * @FilePath: \code\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <!-- <script src="./jQuery.js"></script> -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- <p>body里的p标签</p> -->
+    <div>我是一个div</div>
+
+    <div class="p-box">
+            <p>
+                我是一个p标签
+                <span>p-span</span>
+            </p>
+
+            <span>我是一个span标签</span>
+            <span>我是一个span标签</span>
+    </div>
+    <div class="in-text">
+        <p></p>
+    </div>
+    <input value="你好呀"  type="text" placeholder="请输入标题">
+    <button>切换</button>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+<script>
+    //获取元素内容，不包括html标签
+//    var texts = $('div').text()
+//    var htmls = $('div.p-box').html()
+//    var texts = $('div.p-box').text()
+//    console.log(htmls);
+//    console.log(texts);
+
+//写入内容
+// $('div.in-text').text('<p>我是JQ设置的值</p>')
+// $('div.in-text').html('<p>我是JQ设置的值</p>')
+
+
+// console.log($('input').val());
+
+// $('input').val('这是一个大标题')
+
+// console.log($('input').attr('type'));
+// $('input').attr('type',"password")
+// console.log($('input').attr('type'));
+
+// $('div.p-box').append("<p>我是append追加的内容</p>")
+// $('div.p-box').prepend('<span>我想在最前面插入一段内容</span>')
+
+// // $('div.p-box').after('<span>我是after插入的一段内容</span>')
+// $('div.p-box').before('<span>我是before插入<br/>的一段内容</span>')
+//  $('div.p-box').remove()
+//  $('div.p-box').empty()
+//  $('div.p-box').html('')
+
+$('p').addClass('red yellow')
+// // $('p').removeClass('red')
+
+// $('button').click(function(){
+//     $('p').toggleClass('red')
+// })
+
+//设置背景颜色
+// $("p").css("background-color","yellow");
+//获取样式
+// console.log($("p").css("background-color"));
+
+// //设置样式
+// $("p").css("background-color","yellow");
+// //设置多个样式
+// $("p").css({"background-color":"yellow","font-size":"200%"});
+
+// console.log( $('div.p-box').width());
+$('div.p-box').width(500)
+
+// console.log($('p').parent());
+// console.log($('p').parents());
+// console.log($('p').parentsUntil('body'));
+
+// console.log($('div.p-box').children());
+// console.log($('div.p-box').find('span'));
+
+// console.log($('div.p-box').siblings());
+
+// console.log($('.p-box').next());
+// console.log($('.in-text').nextAll());
+
+// console.log($(".p-box").nextUntil('input'));
+
+// console.log($('div').first());
+// console.log($('div').last());
+// console.log($('div').eq(3));
+// console.log($('div').filter('.p-box'));
+console.log($('div').not('.p-box'));
+
+// $('body').load('https://www.fastmock.site/mock/323354e56ef21147c3f550e18435baa1/api/get/myCourse','',function(){
+//     console.log("数据已返回");
+// });
+// $.get('https://www.fastmock.site/mock/323354e56ef21147c3f550e18435baa1/api/get/myCourse',function(data,status){
+//       console.log(data);
+//       console.log(status);
+//     });
+
+$.post("https://www.fastmock.site/mock/323354e56ef21147c3f550e18435baa1/api/get/myCourse",
+    {
+      page:1,
+      name:"Tina"
+    },
+    function(data,status){
+      console.log(data);
+      console.log(status);
+    });
+</script>
+</body>
+</html>
