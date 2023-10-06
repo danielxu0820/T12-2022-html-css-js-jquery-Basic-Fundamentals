@@ -1,0 +1,19 @@
+/* 样式初始化 */
+*{
+   padding: 0;
+   margin: 0;
+}
+html,body{
+   width: 100%;
+   height: 100%;
+   background-color: #f4f4f4;
+}
+.header{
+   width: 100%;
+   height: 120px;
+   background-color: #fff;
+}
+.base-box{
+   width: 1190px;
+   margin: 0 auto;
+}
