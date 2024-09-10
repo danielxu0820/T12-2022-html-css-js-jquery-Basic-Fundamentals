@@ -7,19 +7,20 @@
  */
 
 //通过字面量创建
-// var obj = {
-//     name:"tina",
-//     age:18,
-//     list:[1,2,3,4,5],
-//     getAge:function(){
-//         return 18
-//     }
-// }
+var obj = {
+    name:"tina",
+    age:18,
+    list:[1,2,3,4,5],
+    getAge:function(){
+        return 18
+    }
+}
+// console.log(obj);
 
-// // console.log(obj.getAge());
+console.log(obj.getAge());
 
-// console.log(obj['name']);
-// console.log(obj.name);
+console.log(obj['name']);
+console.log(obj.name);
 
 //通过构造函数创建对象
 // var obj = new Object()
@@ -68,9 +69,9 @@
 // }
 
 
-var a = true
+// var a = true
 
-console.log( String(123));
+// console.log( String(123));
 
 
 
