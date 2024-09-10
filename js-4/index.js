@@ -1,7 +1,7 @@
 
 
 
-// var list = ["Ace", "Tina", "Eleven"];
+var list = ["Ace", "Tina", "Eleven"];
 // console.log(list.toString());
 // console.log([null,undefined,3,4,5,6].toString());
 
@@ -39,16 +39,16 @@
 // list.splice(0,2,'哈哈哈',123,456)
 // console.log(list);
 
-// var list2 = [1,2,3,4,5,6,7,8,9]
-// var list3 = [10,11,12]
+var list2 = [1,2,3,4,5,6,7,8,9]
+var list3 = [10,11,12]
 
 // list2.forEach(function(v){
 //     list.push(v)
 // })
 // console.log(list);
 //concat 用一个数组去拼接多个数组，并且会返回一个新的数组
-// var newList = list.concat(list2,list3)
-// console.log(newList);
+var newList = list.concat(list2,list3)
+console.log(newList);
 // // console.log(list,list2);
 
 // // slice 从参数1位置开始切割，切割到参数2的位置，不包括参数2位置的数据 返回切割到的数组
@@ -94,10 +94,10 @@
 
 
 // 函数参数  参数的位置是不能变  形参
-function getName(name,age){
-    console.log(name+"今年"+age+"岁");
-}
-getName(18,'tina')
+// function getName(name,age){
+//     console.log(name+"今年"+age+"岁");
+// }
+// getName(18,'tina')
 // getName('缇娜')
 // getName('缇娜')
 
